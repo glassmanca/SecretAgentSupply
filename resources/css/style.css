@@ -66,6 +66,10 @@ nav ul{
   justify-content: space-between;
 }
 
+.menu {
+  display: none;
+}
+
 li a{
   color: white;
   text-decoration: none;
@@ -88,15 +92,7 @@ h2 {
   margin: 3rem 0 0 0;
 }
 
-.pen {
-  width: 30%;
-}
-
-.watch {
-  width: 30%;
-}
-
-.glasses {
+.pen, .watch, .glasses {
   width: 30%;
 }
 
@@ -140,10 +136,33 @@ h2 {
   padding: 1rem 2rem;
 }
 
-
-
 footer {
   background-color: black;
   padding: 5rem 0;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 0.75rem 0;
+  }
+
+  .glasses{
+    display: none;
+  }
+
+  .pen, .watch {
+    width: 47%;
+  }
 }
